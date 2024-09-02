@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom link -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>European IT</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header_section">
+        <div class="container">
+            <div class="logo">
+                <img src="asset/image/logo.png" alt="">
+            </div>
+            <div class="manu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- end -->
+    <!-- banner start -->
+    <section class="banner_section">
+        <img src="asset/image/banner.jpg" alt="">
+    </section>
+    <!-- banner end -->
+<section class="Staf_section">
+    <h2>Our Stafs</h2>
+    <div class="container">
+        <div class="staf_col">
+          <div class="staf_img">
+            <img src="asset/image/staf1.jpg" alt="">
+          </div>
+            <h4>Toabur Rahman</h4>
+            <p>Web Developer</p>
+        </div>
+        <div class="staf_col">
+            <div class="staf_img">
+                <img src="asset/image/staf3.jpg" alt="">
+            </div>
+            <h4>Faruq Ahmed</h4>
+            <p>Web Developer</p>
+        </div>
+        <div class="staf_col">
+          <div class="staf_img">
+            <img src="asset/image/staf2.jpg" alt="">
+          </div>
+            <h4>Md Sagor Miah</h4>
+            <p>Degital Marketer</p>
+        </div>
+    </div>
+</section>
+<!-- about_section -->
+ <section class="about_section">
+    <h2>About Our company</h2>
+    <div class="container">
+        <div class="about_img">
+            <img src="asset/image/about.jpg" alt="">
+        </div>
+      <div class="about_txt">
+        <h4>European IT</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet dicta saepe quaerat aperiam voluptas optio voluptatibus molestiae. Assumenda, delectus! Labore aperiam odio sit, omnis praesentium corporis repudiandae quo nihil! <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet dicta saepe quaerat aperiam voluptas optio voluptatibus molestiae. Assumenda, delectus! Labore aperiam odio sit, omnis praesentium corporis repudiandae quo nihil! <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet dicta saepe quaerat aperiam voluptas optio voluptatibus molestiae. Assumenda, delectus! Labore aperiam odio sit, omnis praesentium corporis repudiandae quo nihil!
+        </p>
+      </div>
+    </div>
+ </section>
+ <!-- end -->
+     <!-- footer senction -->
+     <footer class="footer">
+        <div class="container">
+            <h4>@copyright & Desing By Israt Jahan Tonny</h4>
+        </div>
+        <div id="datetime"></div>
+              </footer>
+              <script>
+                
+              function updateDateTime() {
+                const now = new Date();
+                const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+                const dateTimeString = now.toLocaleDateString('en-US', options);
+            
+                document.getElementById('datetime').textContent = dateTimeString;
+            }
+            
+            // Update the date and time immediately
+            updateDateTime();
+            
+            // Update the date and time every second
+            setInterval(updateDateTime, 1000);
+              </script>
+        </body>
+        
+        </html>
